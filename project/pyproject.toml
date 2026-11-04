@@ -6,9 +6,11 @@ readme = "README.md"
 authors = [{ name = "idradi", email = "idrissiradi@gmail.com" }]
 requires-python = ">=3.14"
 dependencies = [
+    "aerich>=0.10.1",
     "asyncpg>=0.32.0",
     "fastapi>=0.162.0",
     "pydantic-settings>=2.16.2",
+    "tortoise-orm[asyncpg]>=1.1.9",
     "uvicorn>=0.54.0",
 ]
 
@@ -21,3 +23,8 @@ build-backend = "uv_build"
 
 [tool.uv]
 package = false
+
+[tool.tortoise]
+tortoise_orm = "app.db.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./."
