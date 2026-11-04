@@ -6,6 +6,7 @@ readme = "README.md"
 authors = [{ name = "idradi", email = "idrissiradi@gmail.com" }]
 requires-python = ">=3.14"
 dependencies = [
+    "asyncpg>=0.32.0",
     "fastapi>=0.162.0",
     "pydantic-settings>=2.16.2",
     "uvicorn>=0.54.0",
