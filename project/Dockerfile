@@ -2,9 +2,9 @@ FROM python:3.14.10-slim-bookworm
 
 WORKDIR /usr/src/app
 
-# set environment variable
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # install system dependencies
 RUN apt-get update \
