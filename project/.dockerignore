@@ -8,3 +8,4 @@ __pycache__
 .git
 .env
 .pytest_cache
+htmlcov

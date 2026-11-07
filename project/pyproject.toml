@@ -32,6 +32,10 @@ src_folder = "./."
 
 [dependency-groups]
 dev = [
+    "black>=26.10.1",
+    "flake8>=7.5.0",
     "httpx2>=2.16.0",
+    "isort>=9.0.2",
     "pytest>=9.2.0",
+    "pytest-cov>=7.1.0",
 ]
