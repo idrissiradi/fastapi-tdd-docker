@@ -6,3 +6,4 @@ tortoise-orm[asyncpg]==1.1.9
 aerich==0.10.1
 pytest==9.2.0
 httpx2==2.16.0
+gunicorn==26.2.0
