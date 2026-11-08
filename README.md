@@ -1,10 +1,8 @@
-# FastAPI TDD Docker
+# Test-Driven Development with FastAPI and Docker
 
 A FastAPI service backed by PostgreSQL and Tortoise ORM.
 
-# Test-Driven Development with FastAPI and Docker
-
-![CI/CD](https://github.com/idrissiradi/fastapi-tdd-docker/actions/workflows/main.yml/badge.svg?branch=main)
+![Continuous Integration and Delivery](https://github.com/idrissiradi/fastapi-tdd-docker/actions/workflows/main.yml/badge.svg?branch=main)
 
 ## Run with Docker Compose
 

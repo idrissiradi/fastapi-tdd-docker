@@ -8,7 +8,7 @@ router = APIRouter()
 
 
 @router.post("/", response_model=SummaryResponseSchema, status_code=201)
-async def create_summary(payload: SummaryPayloadSchema) -> SummaryResponseSchema:
+async def create_summary(payload: SummaryPayloadSchema):
     summary_id = await crud.post(payload)
 
     response_object = SummaryResponseSchema(id=summary_id, url=payload.url)
@@ -28,3 +28,15 @@ async def read_summary(id: int):
 @router.get("/", response_model=list[SummarySchema])
 async def read_all_summaries():
     return await crud.get_all()
+
+
+@router.delete("/{id}/", response_model=SummaryResponseSchema)
+async def delete_summary(id: int):
+    summary = await crud.get(id)
+
+    if not summary:
+        raise HTTPException(status_code=404, detail="Summary not found")
+
+    await crud.delete(id)
+
+    return summary
