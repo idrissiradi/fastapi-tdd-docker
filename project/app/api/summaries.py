@@ -1,4 +1,3 @@
-from _pytest.python import async_fail
 from fastapi import APIRouter, HTTPException, Path
 
 from app.api import crud
